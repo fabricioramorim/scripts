@@ -16,4 +16,8 @@
   
   sleep 2s
   
- 
+  echo Instalando Apache...
+  
+  apt-get install apache2 -y
+  
+  sleep 2s
