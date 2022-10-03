@@ -2,22 +2,24 @@
 
   echo Script para instalacao base - Wordpress  
   
+  echo ----------------------------------------------
+  
   echo Trocando de usuario...
   
   sudo su
   
-  sleep 2s
+  echo ----------------------------------------------
   
   echo Atualizando o sistema...
   
   sleep 1s
   
-  apt update && apt upgrade -y
+  apt-get update && apt-get upgrade -y
   
-  sleep 2s
+  echo ----------------------------------------------
   
   echo Instalando Apache...
   
   apt-get install apache2 -y
   
-  sleep 2s
+  echo ----------------------------------------------
