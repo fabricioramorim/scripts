@@ -13,3 +13,6 @@
   FLUSH PRIVILEGES;
   
   exit;
+
+
+  ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'mynewpassword';
