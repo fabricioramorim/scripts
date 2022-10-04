@@ -47,7 +47,7 @@
   
   echo Instalando e configurando o PHP e suas dependencias...
   
-  apt-get install php libapache2-mod-php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip -y
+  apt-get install php libapache2-mod-php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip php-imagick -y
   
   echo PHP instalado...
   
