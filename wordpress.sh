@@ -4,9 +4,10 @@
   
   echo ----------------------------------------------
   
-  echo Trocando de usuario...
-  
-  sudo su
+  if [[ $EUID -ne 0 ]]; then
+   echo "Esse script deve ser rodado como usuario Root..." 
+   exit 1
+  fi
   
   echo ----------------------------------------------
   
@@ -36,7 +37,7 @@
 
   echo Instalando e configurando o MySql...
   
-  apt-get install mysql-client mysql-server
+  apt-get install mysql-client mysql-server -y
   
   echo MySql instalado...
   
@@ -46,7 +47,7 @@
   
   echo Instalando e configurando o PHP e suas dependencias...
   
-  apt-get install php libapache2-mod-php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip 
+  apt-get install php libapache2-mod-php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip -y
   
   echo MySql instalado...
   
@@ -84,7 +85,11 @@
   
   echo ----------------------------------------------
   
-  echo Script finalizado, termine a configuracao...
+  echo Deletando o arquivo padrão index.html...
+  
+  rm /var/www/html/index.html
+  
+  echo Script finalizado, termine a configuracao de acesso ao banco de dados...
   
   echo ----------------------------------------------
   
