@@ -10,6 +10,8 @@
   
   GRANT ALL ON wordpress_db.* TO 'wp_oggi'@'localhost' IDENTIFIED BY '@h95eVqoVts6yOqy';
   
+  GRANT ALL PRIVILEGES ON wordpress_db.* TO wp_oggi@localhost;
+  
   FLUSH PRIVILEGES;
   
   exit;
