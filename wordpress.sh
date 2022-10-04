@@ -91,10 +91,10 @@
   
   echo ----------------------------------------------
   
-  echo Script finalizado, executando configuracao padrao de acesso ao banco de dados...
+  echo Script finalizado...
   
-  ./mysql_config.sh
-  
+  echo Termine a configuracao de acesso ao banco de dados...
+    
   echo ----------------------------------------------
   
   sleep 2s  
