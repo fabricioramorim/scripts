@@ -49,7 +49,7 @@
   
   apt-get install php libapache2-mod-php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip -y
   
-  echo MySql instalado...
+  echo PHP instalado...
   
   sleep 2s
   
@@ -89,7 +89,11 @@
   
   rm /var/www/html/index.html
   
-  echo Script finalizado, termine a configuracao de acesso ao banco de dados...
+  echo ----------------------------------------------
+  
+  echo Script finalizado, executando configuracao padrao de acesso ao banco de dados...
+  
+  ./mysql_config.sh
   
   echo ----------------------------------------------
   
