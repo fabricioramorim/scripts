@@ -10,7 +10,7 @@
 
   sudo apt-get install certbot -y
 
-  DOMAIN=roneysoft.com.br
+  DOMAIN=YOUR_DOMAIN
 
   WILDCARD=*.$DOMAIN
 
